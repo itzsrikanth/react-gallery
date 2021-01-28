@@ -1,0 +1,32 @@
+.wrapper {
+  background-color: grey;
+}
+
+.ipga {
+  $color-gradient-primary: var(--color-gradient-primary);
+  $color-gradient-secondary: var(--color-gradient-secondary);
+  background: linear-gradient(
+    90deg,
+    $color-gradient-secondary -50%,
+    $color-gradient-secondary 30%,
+    $color-gradient-primary 50%,
+    $color-gradient-secondary 70%,
+    $color-gradient-secondary 150%
+  );
+  height: 100%;
+  background-size: 200% 100%;
+  background-position-x: 0%;
+  animation: waves 2s ease-in-out infinite;
+}
+
+@keyframes waves {
+  from {
+    background-position-x: 150%;
+  }
+  30% {
+    background-position-x: -50%;
+  }
+  to {
+    background-position-x: -50%;
+  }
+}
