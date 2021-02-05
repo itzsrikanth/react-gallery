@@ -4,7 +4,9 @@ import ContentLoader, {ContentLoaderProps} from './ContentLoader';
 
 const props: ContentLoaderProps = {
   width: 500,
-  height: 500
+  height: 500,
+  duration: 300,
+  delay: 2000
 }
 
 const story = {

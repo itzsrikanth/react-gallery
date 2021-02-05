@@ -1,0 +1,8 @@
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+
+:root {
+  @each $key, $value in $grid-breakpoints {
+      --breakpoint-#{$key}: #{$value};
+  }
+}

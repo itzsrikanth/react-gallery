@@ -1,0 +1,26 @@
+@import '../../../node_modules/bootstrap/scss/functions';
+@import '../../../node_modules/bootstrap/scss/variables';
+@import '../../../node_modules/bootstrap/scss/mixins/breakpoints';
+
+.vg {
+  height: 300px;
+  width: 400px;
+}
+
+.vg-img {
+  background-size: cover;
+  flex-grow: 1;
+  transition-duration: 0.3s;
+  transition-property: flex-grow, background-position-y;
+  cursor: pointer;
+
+  &:hover {
+    flex-grow: 1.5;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .vg-img {
+    transition-property: flex-grow, background-position-x;
+  }
+}
